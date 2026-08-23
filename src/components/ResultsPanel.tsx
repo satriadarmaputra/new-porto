@@ -6,6 +6,6 @@ export default function ResultsPanel() {
       <div className="result-grid">{results.map(([value, label]) => <div key={label}><strong>{value}</strong><span>{label}</span></div>)}</div>
       <div className="chips" aria-label="Metrik pendukung"><span><b>1.4M+</b> Link clicks</span><span><b>37.6K</b> Pengikut baru</span><span><b>2.4K</b> Jam tonton</span></div>
     </div>
-    <footer className="results-footer"><p>Data performa mengacu pada laporan yang tercantum di CV.</p><a href="mailto:satria@example.com">Hubungi saya ↗</a></footer><span className="decor-arrow" aria-hidden="true" />
+    <footer className="results-footer"><p>Data performa mengacu pada laporan yang tercantum di CV.</p><a href="mailto:satria@example.com">Hubungi saya <span className="contact-arrow" aria-hidden="true" /></a></footer><span className="decor-arrow" aria-hidden="true" />
   </aside>;
 }
