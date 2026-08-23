@@ -5,7 +5,12 @@ import './globals.css';
 const display = Archivo_Black({ variable: '--font-display', weight: '400', subsets: ['latin'] });
 const body = Space_Grotesk({ variable: '--font-body', subsets: ['latin'] });
 
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : 'https://satria-darma-social-portfolio.satriadarma01.chatgpt.site';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: 'Satria Darma Putra — Social Media Portfolio',
   description: 'Tujuh konten pilihan dan akumulasi hasil kerja Satria Darma Putra, Social Media Specialist.',
   openGraph: {
