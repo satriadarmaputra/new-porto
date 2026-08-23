@@ -5,7 +5,7 @@ export default function VideoPreview({ content }: { content: FeaturedContent }) 
   const platformClass = platform.toLowerCase();
   return <div className={`video-wrap video-${platformClass}`}>
     <div className="video-fallback" aria-hidden="true"><span>{content.id}</span><strong>{content.title}</strong></div>
-    <iframe key={content.embedUrl} src={content.embedUrl} title={`Preview ${content.title}`} loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen />
+    <iframe key={content.embedUrl} src={content.embedUrl} title={`Preview ${content.title}`} loading="lazy" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen />
     <a href={content.originalUrl} target="_blank" rel="noreferrer" className="platform-link">Buka di {platform} ↗</a>
   </div>;
 }
