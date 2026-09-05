@@ -17,7 +17,7 @@ export default function ContentSlider() {
       <div className="content-meta"><div><span>Brand</span><strong>{current.brand}</strong></div><div><span>Platform</span><strong>{current.platform}</strong></div></div>
       <p className="snapshot">Metriks Performance</p><div className={`metric-grid ${current.metrics.length === 1 ? 'single' : ''}`}>{current.metrics.map(metric => <div key={metric.label}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}</div>
       <p className="pillar">{current.pillar}</p><h3>{current.title}</h3><p className="story">{current.story}</p>
-      <div className="binus-callout"><strong>Bisa dibawa ke Life at BINUS</strong><p>{current.application}</p></div><a className="primary-link" href={current.originalUrl} target="_blank" rel="noreferrer">Lihat konten asli ↗</a>
+      <div className="development-callout"><strong>Potensi pengembangan</strong><p>{current.development}</p></div><a className="primary-link" href={current.originalUrl} target="_blank" rel="noreferrer">Lihat konten asli ↗</a>
     </div></article>
     <nav className="slider-nav" aria-label="Navigasi konten"><div className="dots">{featuredContent.map((item, index) => <button type="button" key={item.id} className={index === active ? 'active' : ''} onClick={() => setActive(index)} aria-label={`Lihat konten ${item.id}: ${item.title}`} aria-current={index === active ? 'true' : undefined} />)}</div><div className="arrows"><button type="button" onClick={() => move(-1)} aria-label="Konten sebelumnya">←</button><button type="button" onClick={() => move(1)} aria-label="Konten berikutnya">→</button></div></nav>
   </section>;
