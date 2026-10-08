@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const experiences = [
   {
     period: '2025 - 2026',
@@ -39,6 +41,16 @@ export default function ResumeSection() {
     <div className="resume-intro">
       <p className="eyebrow">Career snapshot / CV</p>
       <h2 id="resume-title">Dari ide ke eksekusi, lalu dibuktikan lewat angka.</h2>
+      <figure className="resume-portrait">
+        <Image
+          src="/satria-portrait.png"
+          alt="Satria Darma Putra"
+          width={1124}
+          height={1402}
+          sizes="(max-width: 680px) 68vw, 240px"
+        />
+        <figcaption>Satria Darma Putra <span>Social Media &amp; Visual</span></figcaption>
+      </figure>
       <p className="resume-lede">
         Perjalanan lebih dari enam tahun dari desain ke social media membentuk cara kerja
         yang menyeluruh: menemukan sudut cerita, mengolahnya menjadi konten,
