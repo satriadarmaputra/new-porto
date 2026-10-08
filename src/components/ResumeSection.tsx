@@ -38,10 +38,11 @@ export default function ResumeSection() {
   return <section className="resume-section" id="resume" aria-labelledby="resume-title">
     <div className="resume-intro">
       <p className="eyebrow">Career snapshot / CV</p>
-      <h2 id="resume-title">6+ tahun di antara konten, desain &amp; digital.</h2>
+      <h2 id="resume-title">Dari ide ke eksekusi, lalu dibuktikan lewat angka.</h2>
       <p className="resume-lede">
-        Social media specialist yang menggabungkan strategi, produksi kreatif,
-        analitik, dan komunikasi korporat untuk mengubah ide menjadi hasil yang terukur.
+        Perjalanan lebih dari enam tahun dari desain ke social media membentuk cara kerja
+        yang menyeluruh: menemukan sudut cerita, mengolahnya menjadi konten,
+        lalu membaca hasilnya untuk menentukan langkah berikutnya.
       </p>
       <div className="resume-actions">
         <a className="resume-primary" href="/cv-satria-darma-putra.pdf" target="_blank" rel="noreferrer">Lihat CV <span aria-hidden="true">↗</span></a>
