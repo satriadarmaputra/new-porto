@@ -1,5 +1,6 @@
 import ResultsPanel from './ResultsPanel';
 import ContentSlider from './ContentSlider';
+import GraphicDesignSection from './GraphicDesignSection';
 import ResumeSection from './ResumeSection';
 
 export default function PortfolioLayout() {
@@ -8,6 +9,7 @@ export default function PortfolioLayout() {
       <ResultsPanel />
       <ContentSlider />
     </main>
+    <GraphicDesignSection />
     <ResumeSection />
   </>;
 }
