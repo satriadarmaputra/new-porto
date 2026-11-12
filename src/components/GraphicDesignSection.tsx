@@ -8,8 +8,8 @@ export default function GraphicDesignSection() {
         <h2 id="design-title">Graphic<br />Design.</h2>
       </div>
       <p>
-        Pilihan pekerjaan visual dari kebutuhan brand, kampanye,
-        social media, hingga komunikasi informasi.
+        Satu ruang untuk berbagai kebutuhan visual: kampanye, social media,
+        promosi produk, hingga komunikasi korporat.
       </p>
     </header>
 
@@ -31,7 +31,7 @@ export default function GraphicDesignSection() {
         </>;
 
         return project.href
-          ? <a className={`design-card design-card-${index + 1}`} href={project.href} target="_blank" rel="noreferrer" key={project.title}>{content}</a>
+          ? <a className={`design-card design-card-${index + 1}`} href={project.href} target="_blank" rel="noreferrer" aria-label={`Buka ${project.title} dalam ukuran penuh`} key={project.title}>{content}</a>
           : <article className={`design-card design-card-${index + 1}`} key={project.title}>{content}</article>;
       })}
     </div>

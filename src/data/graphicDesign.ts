@@ -2,17 +2,15 @@ export type GraphicDesignProject = {
   title: string;
   category: string;
   year: string;
-  image?: string;
-  href?: string;
+  image: string;
+  href: string;
 };
 
-// Isi `image` dengan path gambar di folder public, misalnya `/design/project-01.jpg`.
-// Isi `href` jika karya memiliki halaman studi kasus atau tautan eksternal.
 export const graphicDesignProjects: GraphicDesignProject[] = [
-  { title: 'Project 01', category: 'Brand Identity', year: '20—' },
-  { title: 'Project 02', category: 'Social Media Design', year: '20—' },
-  { title: 'Project 03', category: 'Campaign Visual', year: '20—' },
-  { title: 'Project 04', category: 'Editorial Design', year: '20—' },
-  { title: 'Project 05', category: 'Infographic', year: '20—' },
-  { title: 'Project 06', category: 'Other Selected Work', year: '20—' },
+  { title: 'Institutional & Community Visuals', category: 'Education / Community', year: '2019-2024', image: '/design/selected-01.jpg', href: '/design/selected-01.jpg' },
+  { title: 'Fundraising & Educational Content', category: 'Social Campaign', year: '2020-2022', image: '/design/selected-02.jpg', href: '/design/selected-02.jpg' },
+  { title: 'Travel & Community Communication', category: 'Institutional Content', year: '2022', image: '/design/selected-03.jpg', href: '/design/selected-03.jpg' },
+  { title: 'Consumer & Brand Campaigns', category: 'Brand Campaign', year: '2022-2025', image: '/design/selected-04.jpg', href: '/design/selected-04.jpg' },
+  { title: 'Product & Promotional Design', category: 'Product Communication', year: '2022-2025', image: '/design/selected-05.jpg', href: '/design/selected-05.jpg' },
+  { title: 'Corporate & Public Communication', category: 'Corporate Communication', year: '2024-2025', image: '/design/selected-06.jpg', href: '/design/selected-06.jpg' },
 ];
